@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="mr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>योगसाधना – निरोगी जीवनाचा मार्ग | हेमांगी ठोके</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;800&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="fx"></div>
+<div id="progress"></div>
 
+<header class="nav">
+  <a class="logo" href="#home">🪷 योगसाधना</a>
+  <nav>
+    <a href="#home" data-p="home">परिचय</a>
+    <a href="#yoga" data-p="yoga">योग ब्लॉग</a>
+    <a href="#shots" data-p="shots">स्क्रीनशॉट</a>
+  </nav>
+  <button id="theme" aria-label="थीम बदला">🌙</button>
+</header>
+
+<!-- ============ पान १ : परिचय ============ -->
+<main class="page" id="home">
+  <section class="intro">
+    <div class="photo-wrap tilt">
+      <div class="ring"></div>
+      <img id="me" src="photo.jpg" alt="हेमांगी ठोके" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar',textContent:'🧘‍♀️'}))">
+    </div>
+    <div class="intro-text">
+      <p class="small rv">ब्लॉग सादरकर्ती</p>
+      <h1 class="shine rv">हेमांगी रामसिंग ठोके</h1>
+      <div class="info">
+        <div class="chip rv"><span>रोल नंबर</span><b>९२</b></div>
+        <div class="chip rv"><span>महाविद्यालय</span><b>सेवा सदानंद कॉलेज, उल्हासनगर</b></div>
+        <div class="chip rv"><span>ब्लॉगचा विषय</span><b>योग</b></div>
+      </div>
+      <a class="btn rv" href="#yoga">योग ब्लॉग वाचा</a>
+    </div>
+  </section>
+  <div class="scroll-hint">खाली स्क्रोल करा ↓</div>
+  <section class="quote-band rv"><p>“योग म्हणजे शरीर, मन आणि आत्मा यांचा संगम.”</p></section>
+</main>
+
+<!-- ============ पान २ : योग ब्लॉग ============ -->
+<main class="page" id="yoga">
+  <section class="hero">
+    <svg class="mandala" viewBox="0 0 200 200" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width=".6">
+        <circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="40"/>
+        <g id="petals"></g>
+      </g>
+    </svg>
+    <div class="hero-in">
+      <div class="om">ॐ</div>
+      <h1 class="shine">योग – निरोगी जीवनाचा मार्ग</h1>
+      <p>विद्यार्थ्यांसाठी योग : एकाग्रता, आरोग्य आणि मनःशांती</p>
+    </div>
+  </section>
+
+  <section class="sec"><h2 class="rv">प्रस्तावना</h2>
+    <p class="lead rv">योग ही भारताने संपूर्ण जगाला दिलेली एक अमूल्य देणगी आहे. योग म्हणजे केवळ शारीरिक व्यायाम नसून शरीर, मन आणि आत्मा यांना जोडणारी एक सुंदर जीवनपद्धती आहे. आजच्या धावपळीच्या जीवनात निरोगी राहण्यासाठी योगाचे महत्त्व खूप वाढले आहे.</p>
+  </section>
+
+  <section class="stats">
+    <div class="stat rv"><b data-n="5000">०</b><span>वर्षांपेक्षा जुनी परंपरा</span></div>
+    <div class="stat rv"><b data-n="21">०</b><span>जून : आंतरराष्ट्रीय योग दिन</span></div>
+    <div class="stat rv"><b data-n="8">०</b><span>आसने या ब्लॉगमध्ये</span></div>
+    <div class="stat rv"><b data-n="6">०</b><span>मोठे फायदे</span></div>
+  </section>
+
+  <section class="sec"><h2 class="rv">योगाचे महत्त्व</h2>
+    <div class="cols">
+      <p class="rv from-l">योगामुळे शरीर निरोगी, मन शांत आणि विचार सकारात्मक राहण्यास मदत होते. नियमित योगासने केल्यामुळे शरीराची लवचिकता वाढते, स्नायू मजबूत होतात आणि शरीरातील ताण कमी होण्यास मदत होते. प्राणायामामुळे श्वसनावर नियंत्रण ठेवता येते आणि ध्यानामुळे मनाला शांती मिळते.</p>
+      <p class="rv from-r">विद्यार्थ्यांसाठीही योग खूप उपयुक्त आहे. योगामुळे एकाग्रता, स्मरणशक्ती आणि आत्मविश्वास वाढण्यास मदत होते. शिक्षकांनीदेखील आपल्या दैनंदिन जीवनात योगाचा समावेश करावा. कारण निरोगी शिक्षकच विद्यार्थ्यांना उत्तम मार्गदर्शन करू शकतो.</p>
+    </div>
+  </section>
+
+  <section class="sec"><h2 class="rv">प्रमुख योगासने</h2>
+    <p class="hint rv">कार्डवर क्लिक/टॅप करून माहिती पाहा</p>
+    <div class="grid" id="asanas"></div>
+  </section>
+
+  <section class="sec breath"><h2 class="rv">प्राणायाम : श्वासाचा सराव</h2>
+    <div class="orb-wrap rv">
+      <div class="orb" id="orb"><span id="orbtxt">सुरू करा</span></div>
+    </div>
+    <button class="btn" id="bstart">सराव सुरू / थांबवा</button>
+    <p class="hint">४ सेकंद श्वास घ्या · ४ सेकंद रोखा · ४ सेकंद सोडा</p>
+  </section>
+
+  <section class="sec"><h2 class="rv">योगाचे फायदे</h2>
+    <ol class="benefits" id="benefits"></ol>
+  </section>
+
+  <section class="sec"><h2 class="rv">विद्यार्थ्यांसाठी १० मिनिटांचा रोजचा आराखडा</h2>
+    <div class="timeline" id="tl"></div>
+  </section>
+
+  <section class="sec end"><h2 class="rv">निष्कर्ष</h2>
+    <p class="lead rv">योग ही एक दिवसाची साधना नसून आयुष्यभर जोपासण्याची सवय आहे. दररोज थोडा वेळ योगासाठी दिल्यास आपण निरोगी आणि आनंदी जीवन जगू शकतो. म्हणूनच प्रत्येकाने आपल्या दैनंदिन जीवनात योगाचा स्वीकार करावा.</p>
+    <p class="slogan rv shine">“करा रोज योग, राहा निरोगी आणि निरामय!” 🧘</p>
+    <p class="author rv">लेखक : हेमांगी रामसिंग ठोके</p>
+  </section>
+</main>
+
+<!-- ============ पान ३ : स्क्रीनशॉट ============ -->
+<main class="page" id="shots">
+  <section class="sec">
+    <h2 class="rv">प्रकल्प स्क्रीनशॉट</h2>
+    <p class="lead rv">हा प्रकल्प तयार करताना घेतलेले स्क्रीनशॉट येथे टप्प्याटप्प्याने दाखवले आहेत.</p>
+    <label class="btn up rv">＋ स्क्रीनशॉट जोडा<input type="file" id="file" accept="image/*" multiple hidden></label>
+    <div class="gallery" id="gallery"></div>
+  </section>
+</main>
+
+<footer>© २०२६ हेमांगी रामसिंग ठोके · रोल नं. ९२ · सेवा सदानंद कॉलेज, उल्हासनगर</footer>
+<div id="lb" hidden><img alt=""><p></p></div>
+<script src="script.js"></script>
+</body>
+</html>
